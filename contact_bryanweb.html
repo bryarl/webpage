@@ -167,5 +167,15 @@
   © 2026 Bryan Aurelius
 </footer>
 
+<audio id="bg-music" loop>
+  <source src="lofi-jazz.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener("click", function () {
+  document.getElementById("bg-music").play();
+}, { once: true });
+</script>
+  
 </body>
 </html>
