@@ -41,7 +41,7 @@
       background: rgb(146, 127, 103);
     }
 
-    /* HERO WITH BACKGROUND IMAGE */
+    /* HERO */
     .hero {
       text-align: center;
       padding: 120px 20px 80px;
@@ -73,34 +73,17 @@
       color: rgb(220, 220, 220);
     }
 
-
-    /* VIDEO SECTION */
     .video-section {
-      background: rgb(60, 45, 20); /* beda dari yang lain */
+      background: rgb(60, 45, 20);
       padding: 60px 20px;
       text-align: center;
       border-top: 2px solid rgb(180, 148, 106);
     }
 
-    .video-section h2 {
-      margin-bottom: 20px;
-    }
-
     .video-container {
-      max-width: 800px;
-      margin: auto;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      margin-top: 20px;
     }
 
-    .video-container iframe {
-      width: 100%;
-      height: 450px;
-      border: none;
-    }
-
-    /* GALLERY SECTION */
     .gallery-section {
       background: rgb(95, 70, 30);
       padding: 50px 20px;
@@ -141,20 +124,16 @@
     }
 
     @keyframes scrollLoop {
-      0% {
-        transform: translateX(0);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 12px 0;
       color: rgb(200, 200, 200);
       border-top: 1px solid rgb(146, 127, 103);
-      margin-top: 40px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -184,12 +163,15 @@
 
   <div class="video-container">
     <iframe 
-      width="100%" 
-      height="450"
-      src="https://www.youtube.com/embed/ysz5S6PUM-U"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/HCDVN7DCzYE?si=KhWyk7emgH6HDiWk&amp;controls=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen>
     </iframe>
-    
   </div>
 </section>
 
@@ -199,14 +181,12 @@
   <div class="gallery-wrapper">
     <div class="gallery-track">
 
-      <!-- items -->
       <div class="gallery-item">Coming Soon</div>
       <div class="gallery-item">Coming Soon</div>
       <div class="gallery-item">Coming Soon</div>
       <div class="gallery-item">Coming Soon</div>
       <div class="gallery-item">Coming Soon</div>
 
-      <!-- duplicate for loop -->
       <div class="gallery-item">Coming Soon</div>
       <div class="gallery-item">Coming Soon</div>
       <div class="gallery-item">Coming Soon</div>
