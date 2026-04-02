@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - Bryan Aurelius</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      background: rgb(80, 59, 24);
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      background: rgb(95, 70, 30);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid rgb(180, 148, 106);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .logo {
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: rgb(146, 127, 103);
+    }
+
+    .container {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .box {
+      background: rgb(180, 148, 106);
+      padding: 40px;
+      border-radius: 12px;
+      color: black;
+      max-width: 500px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: rgb(80, 59, 24);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: black;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: rgb(95, 70, 30);
+      border-top: 2px solid rgb(180, 148, 106);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="logo">
+    Bryan's Personal Website
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about_bryanweb.html">About</a>
+    <a href="projects_bryanweb.html">Projects</a>
+    <a href="mailto:bryanaurelius0@gmail.com">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="box">
+    <h1>🚧 Projects</h1>
+    <p>Under Construction</p>
+    <p>I'm currently building and preparing my projects.</p>
+
+    <a class="back-btn" href="home_bryanweb.html">← Back Home</a>
+  </div>
+</div>
+
+<footer>
+  © 2026 Bryan Aurelius
+</footer>
+
+<audio id="bg-music" loop>
+  <source src="lofi-jazz.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener("click", function () {
+  document.getElementById("bg-music").play();
+}, { once: true });
+</script>
+
+</body>
+</html>
