@@ -7,19 +7,24 @@
   <style>
     body {
       margin: 0;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-      background: rgb(80, 59, 24);
-      color: white;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: white;
+      color: #1b3a2f;
+
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
+    /* HEADER (IDENTIK SEMUA PAGE) */
     header {
       padding: 20px;
-      background: rgb(95, 70, 30);
+      background: #2e7d32;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid rgb(180, 148, 106);
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      border-bottom: 2px solid #81c784;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
     .logo {
@@ -39,11 +44,12 @@
     }
 
     nav a:hover {
-      background: rgb(146, 127, 103);
+      background: #66bb6a;
     }
 
+    /* CONTENT */
     .container {
-      min-height: 80vh;
+      flex: 1; /* biar footer selalu di bawah */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,12 +58,12 @@
     }
 
     .box {
-      background: rgb(180, 148, 106);
+      background: #c8e6c9;
       padding: 40px;
       border-radius: 12px;
-      color: black;
+      color: #1b3a2f;
       max-width: 500px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
     h1 {
@@ -71,7 +77,7 @@
     .back-btn {
       display: inline-block;
       padding: 10px 20px;
-      background: rgb(80, 59, 24);
+      background: #2e7d32;
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -79,15 +85,17 @@
     }
 
     .back-btn:hover {
-      background: black;
+      background: #1b5e20;
     }
 
+    /* FOOTER (IDENTIK SEMUA PAGE) */
     footer {
       text-align: center;
       padding: 12px 0;
-      color: rgb(200, 200, 200);
-      border-top: 1px solid rgb(146, 127, 103);
+      color: #2e7d32;
+      border-top: 1px solid #a5d6a7;
       margin-top: 20px;
+      background: #f1f8f4;
     }
   </style>
 </head>
@@ -95,9 +103,7 @@
 <body>
 
 <header>
-  <a href="index.html" class="logo">
-    BA
-  </a>
+  <a href="index.html" class="logo">BA</a>
 
   <nav>
     <a href="index.html">Home</a>
@@ -109,9 +115,9 @@
 
 <div class="container">
   <div class="box">
-    <h1>🚧</h1>
-    <p>Under Construction</p>
-    <p>I'm currently building this page.</p>
+    <h1>🚧 Projects</h1>
+    <p><strong>Under Construction</strong></p>
+    <p>I'm currently building and preparing my projects.</p>
 
     <a class="back-btn" href="index.html">← Back Home</a>
   </div>
